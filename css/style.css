@@ -1,0 +1,62 @@
+/* targeting the entire page */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(26, 41, 41);
+}
+/* targets the a-tags, lists and buttons increasing the boldness of the text to 500 and setting the color of the text to white.*/
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+/* displays the content with flexbot and makes the content be spaced out horizontally and centered vertically. */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+/* when the mouse is over the logo, it becomes a pointer */
+.logo {
+    cursor: pointer;
+}
+/* determines the style of the list(bullet points, numbered, lettered or none) */
+.nav-links {
+    list-style: none;
+    
+}
+
+/* display the links in a line and adding spacing between them */
+.nav-links li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+/*  */
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: rgb(106, 255, 47);
+}
+
+button {
+    padding: 7px 20px;
+    background-color: rgb(5, 255, 5);
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+
+button:hover {
+    background-color:seagreen;
+}
